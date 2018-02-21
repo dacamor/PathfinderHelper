@@ -1,0 +1,39 @@
+<!doctype html> 
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Nashville Software School</title>
+
+</head>
+
+<body ng-app=PathfinderHelper>
+  <div ng-controller="RoleMe">
+    <h2>Slam</h2>
+    <button ng-click="roleSlam()">Role</button>
+    <article>Hit: {{ slamHit }}</article>
+    <article>Damage: {{ slamDamage }}</article>
+    
+    
+    <h2>Bite</h2>
+    <button ng-click="roleBite()">Role</button>
+    <article>Hit: {{ biteHit }}</article>
+    <article>Damage: {{ biteDamage }}</article>
+    
+    <h2>Rake</h2>
+    <button ng-click="roleRake()">Role</button>
+    <article>Hit: {{ rakeHit }}</article>
+    <article>Damage: {{ rakeDamage }}</article>
+    
+    <h2>+1 Chainsaw</h2>
+    <button ng-click="roleChainsaw()">Role</button>
+    <article>Hit(first): {{ chainsawFirstHit }}</article>
+    <article>Damage(first): {{ chainsawFirstDamage }}</article>
+    <article>Hit(second): {{ chainsawSecondHit }}</article>
+    <article>Damage(second): {{ chainsawSecondDamage }}</article>
+
+  </div>
+
+  <script src="./lib/node_modules/angular/angular.min.js"></script>
+  <script src="./app/app.js"></script>
+</body>
+</html>
