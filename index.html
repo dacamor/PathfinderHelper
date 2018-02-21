@@ -1,5 +1,6 @@
-<!doctype html> 
+<!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Nashville Software School</title>
@@ -7,33 +8,48 @@
 </head>
 
 <body ng-app=PathfinderHelper>
-  <div ng-controller="RoleMe">
+  <div ng-controller="RollMe">
     <h2>Slam</h2>
-    <button ng-click="roleSlam()">Role</button>
+    <button ng-click="rollSlam()">Roll</button>
     <article>Hit: {{ slamHit }}</article>
     <article>Damage: {{ slamDamage }}</article>
-    
-    
+    <button ng-click="AddSlamTotal()">Add Total</button>
+    <button ng-click="ClearSlamTotal()">Clear Total</button>
+    <article>Total: {{ slamTotal }}</article>
+
+
+
     <h2>Bite</h2>
-    <button ng-click="roleBite()">Role</button>
+    <button ng-click="rollBite()">Roll</button>
     <article>Hit: {{ biteHit }}</article>
     <article>Damage: {{ biteDamage }}</article>
-    
+    <button ng-click="AddBiteTotal()">Add Total</button>
+    <button ng-click="ClearBiteTotal()">Clear Total</button>
+    <article>Total: {{ biteTotal }}</article>
+
     <h2>Rake</h2>
-    <button ng-click="roleRake()">Role</button>
+    <button ng-click="rollRake()">Roll</button>
     <article>Hit: {{ rakeHit }}</article>
     <article>Damage: {{ rakeDamage }}</article>
-    
+    <button ng-click="AddRakeTotal()">Add Total</button>
+    <button ng-click="ClearRakeTotal()">Clear Total</button>
+    <article>Total: {{ rakeTotal }}</article>
+
     <h2>+1 Chainsaw</h2>
-    <button ng-click="roleChainsaw()">Role</button>
+    <button ng-click="rollChainsaw()">Roll</button>
     <article>Hit(first): {{ chainsawFirstHit }}</article>
     <article>Damage(first): {{ chainsawFirstDamage }}</article>
+    <button ng-click="AddChainsawFTotal()">Add Total</button>
     <article>Hit(second): {{ chainsawSecondHit }}</article>
     <article>Damage(second): {{ chainsawSecondDamage }}</article>
+    <button ng-click="AddChainsawSTotal()">Add Total</button>
+    <button ng-click="ClearChainsawTotal()">Clear Total</button>
+    <article>Total: {{ chainsawTotal }}</article>
 
   </div>
 
   <script src="./lib/node_modules/angular/angular.min.js"></script>
   <script src="./app/app.js"></script>
 </body>
+
 </html>
